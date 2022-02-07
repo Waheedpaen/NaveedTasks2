@@ -1,6 +1,6 @@
 
 import { Component, EventEmitter,OnInit, Output } from '@angular/core';
-import { Teacher } from 'src/app/EntityDto/teacher';
+
 
 
 @Component({
