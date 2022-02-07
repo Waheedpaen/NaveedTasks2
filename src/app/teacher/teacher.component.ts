@@ -1,6 +1,6 @@
 
 import { Component, EventEmitter,OnInit, Output } from '@angular/core';
-import { Teacher } from 'EntityDto/teacher';
+import { Teacher } from 'src/app/EntityDto/teacher';
 
 
 @Component({
@@ -23,7 +23,7 @@ export class TeacherComponent implements OnInit {
   @Output() teacherLists  = new EventEmitter<any>();
   @Output() teacherListButton  = new EventEmitter<any>();
   ngOnInit()  {
-    this.teacherLists.emit(this. teacherList); 
+    this.teacherLists.emit(this. teacherList);
 
   }
 teacherData(){

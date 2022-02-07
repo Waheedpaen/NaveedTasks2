@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Student } from 'EntityDto/teacher';
+import { Student } from 'src/app/EntityDto/teacher';
 
 @Component({
   selector: 'app-student',
