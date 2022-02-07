@@ -11,7 +11,7 @@ import { Component, EventEmitter,OnInit, Output } from '@angular/core';
 export class TeacherComponent implements OnInit {
 
   constructor() { }
- teacherList:Teacher[] = [
+ teacherList:any[] = [
     {id: 1,name: 'Waheed Ullah',age: 19,salary:1100 },
     {id: 2,name: 'Zubair Ahamd',age: 12,salary:1300  },
     {id: 3,name: 'Razwan',age: 13,salary:1700  },
