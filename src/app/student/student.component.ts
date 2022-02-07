@@ -14,6 +14,7 @@ export class StudentComponent implements OnInit {
 
 
   ngOnInit(): void {
+    debugger
   }
 
 }
