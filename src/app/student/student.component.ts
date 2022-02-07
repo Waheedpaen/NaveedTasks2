@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Student } from 'src/app/EntityDto/teacher';
+ 
 
 @Component({
   selector: 'app-student',
@@ -9,7 +9,7 @@ import { Student } from 'src/app/EntityDto/teacher';
 export class StudentComponent implements OnInit {
 
   constructor() { }
-@Input() studentList:Student[] = [];
+@Input() studentList:any[] = [];
 
 
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Student, Teacher } from 'src/app/EntityDto/teacher';
+
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,9 @@ import { Student, Teacher } from 'src/app/EntityDto/teacher';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements  OnInit {
-teacherList:Teacher[]=[];
-teacherListButton:Teacher[]=[];
-  studentList:Student[] = [
+teacherList:any[]=[];
+teacherListButton:any[]=[];
+  studentList:any[] = [
     {id: 1,name: 'Waheed',age: 11,fees:1500,semester:6 },
     {id: 2,name: 'Zubair',age: 12,fees:1600,semester:7 },
     {id: 1,name: 'Ali',age: 13,fees:1700,semester:8 },
@@ -26,12 +26,8 @@ teacherListButton:Teacher[]=[];
 dataOutPut(data:any){
   console.log(data);
   data.forEach((datas:any) =>{
-data= new Teacher();
-data.id= datas.id,
-data.name = datas.name,
-data.age= datas.age
-data.salary = datas.salary
- this.teacherList.push(data);
+
+ this.teacherList.push(datas);
   });
 
 console.log(this.teacherList);
