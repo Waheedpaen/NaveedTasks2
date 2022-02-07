@@ -11,6 +11,8 @@ export class StudentComponent implements OnInit {
   constructor() { }
 @Input() studentList:Student[] = [];
 
+
+
   ngOnInit(): void {
   }
 
