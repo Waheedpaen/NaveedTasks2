@@ -1,0 +1,73 @@
+
+<h3>NgFor Directive</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Fees</th>
+      <th scope="col">Semester</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of  directiveList">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.age}}</td>
+      <td>{{item.fees}}</td>
+      <td>{{item.semester}}</td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+
+<br />
+<br />
+
+<h3>NgIf Directive</h3>
+<button type="submit" class="btn btn-primary" (click)="ngIf()">
+Click Me
+</button>
+<table class="table" *ngIf="ngifData">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Fees</th>
+      <th scope="col">Semester</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of  directiveList">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.age}}</td>
+      <td>{{item.fees}}</td>
+      <td>{{item.semester}}</td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+<br />
+<br /><br />
+<br />
+
+<h3 class="text-center">
+  ngClass
+</h3>
+<h4 [ngClass]='addclass()'    >
+Football
+</h4>
+
+<h3 class="text-center">
+  ngStyle
+</h3>
+<h4  [ngStyle]="{'font-size.px':30,color:'red','background-color':'yellow'}"   >
+Football
+</h4>

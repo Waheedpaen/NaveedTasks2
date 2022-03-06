@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\directivedata",
+    "\\src\\app\\directivedata\\directivedata",
+    "\\src\\app\\directivedata\\directiverouting"
+  ],
+  "SelectedNode": "\\src\\app\\directivedata\\directivedata\\directivedata.component.html",
+  "PreviewInSolutionExplorer": false
+}
