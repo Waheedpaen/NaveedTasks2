@@ -6,6 +6,8 @@ const routes: Routes = [
   },
   { path:'directive',  loadChildren:()=>import('./directivedata/directivedata.module').then((m)=>m.DirectivedataModule)
 },
+{ path:'get',  loadChildren:()=>import('./getter-setter/getter-setter.module').then((m)=>m.GetterSetterModule)
+},
 ];
 
 @NgModule({
